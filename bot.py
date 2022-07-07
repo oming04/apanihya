@@ -60,12 +60,12 @@ class Bot(Client):
                     "\nUppsss...Bot Berhenti. Silahkan Bergbung Ke Group https://t.me/SharingUserbot Untuk Bantuan"
                 )
                 sys.exit()
-         if FORCE_SUB_CHANNEL1:
+         if FORCE_SUB_CHANNEL:
             try:
-                link = (await self.get_chat(FORCE_SUB_CHANNEL1)).invite_link
+                link = (await self.get_chat(FORCE_SUB_CHANNEL)).invite_link
                 if not link:
-                    await self.export_chat_invite_link(FORCE_SUB_CHANNEL1)
-                    link = (await self.get_chat(FORCE_SUB_CHANNEL1)).invite_link
+                    await self.export_chat_invite_link(FORCE_SUB_CHANNEL)
+                    link = (await self.get_chat(FORCE_SUB_CHANNEL)).invite_link
                 self.invitelink = link
             except Exception as a:
                 self.LOGGER(__name__).warning(a)
@@ -79,12 +79,12 @@ class Bot(Client):
                     "\nUppsss...Bot Berhenti. Silahkan Bergbung Ke Group https://t.me/SharingUserbot Untuk Bantuan"
                 )
                 sys.exit()
-         if FORCE_SUB_CHANNEL2:
+         if FORCE_SUB_CHANNEL:
             try:
-                link = (await self.get_chat(FORCE_SUB_CHANNEL2)).invite_link
+                link = (await self.get_chat(FORCE_SUB_CHANNEL)).invite_link
                 if not link:
-                    await self.export_chat_invite_link(FORCE_SUB_CHANNEL2)
-                    link = (await self.get_chat(FORCE_SUB_CHANNEL2)).invite_link
+                    await self.export_chat_invite_link(FORCE_SUB_CHANNEL)
+                    link = (await self.get_chat(FORCE_SUB_CHANNEL)).invite_link
                 self.invitelink = link
             except Exception as a:
                 self.LOGGER(__name__).warning(a)
@@ -117,12 +117,12 @@ class Bot(Client):
                     "\nUppsss...Bot Berhenti. Silahkan Bergbung Ke Group https://t.me/SharingUserbot Untuk Bantuan"
                 )
                 sys.exit()
-         if FORCE_SUB_GROUP1:
+         if FORCE_SUB_GROUP:
             try:
-                link = (await self.get_chat(FORCE_SUB_GROUP1)).invite_link
+                link = (await self.get_chat(FORCE_SUB_GROUP)).invite_link
                 if not link:
-                    await self.export_chat_invite_link(FORCE_SUB_GROUP1)
-                    link = (await self.get_chat(FORCE_SUB_GROUP1)).invite_link
+                    await self.export_chat_invite_link(FORCE_SUB_GROUP)
+                    link = (await self.get_chat(FORCE_SUB_GROUP)).invite_link
                 self.invitelink2 = link
             except Exception as a:
                 self.LOGGER(__name__).warning(a)
@@ -136,12 +136,12 @@ class Bot(Client):
                     "\nUppsss...Bot Berhenti. Silahkan Bergbung Ke Group https://t.me/SharingUserbot Untuk Bantuan"
                 )
                 sys.exit()
-        if FORCE_SUB_GROUP2:
+        if FORCE_SUB_GROUP:
             try:
-                link = (await self.get_chat(FORCE_SUB_GROUP2)).invite_link
+                link = (await self.get_chat(FORCE_SUB_GROUP)).invite_link
                 if not link:
-                    await self.export_chat_invite_link(FORCE_SUB_GROUP2)
-                    link = (await self.get_chat(FORCE_SUB_GROUP2)).invite_link
+                    await self.export_chat_invite_link(FORCE_SUB_GROUP)
+                    link = (await self.get_chat(FORCE_SUB_GROUP)).invite_link
                 self.invitelink2 = link
             except Exception as a:
                 self.LOGGER(__name__).warning(a)
